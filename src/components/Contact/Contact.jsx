@@ -118,3 +118,12 @@
 // };
 
 // export default Contact;
+import React from 'react'
+
+export default function Contact() {
+  return (
+    <div>
+      
+    </div>
+  )
+}
