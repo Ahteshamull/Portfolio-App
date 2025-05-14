@@ -15,8 +15,8 @@ export default function App() {
       <div className='relative pt-20'>
         <Navbar />
         <About />
-        <Experience />
         <Skill />
+        <Experience />
         <Work />
         <Education />
         <Contact />

@@ -117,6 +117,27 @@ export const experiences = [
       " Next Js",
     ],
   },
+  {
+    id: 1,
+    img: cpointLogo,
+    role: "Full Stack Developer",
+    company: "Computer Point Bd",
+    date: "May 2025 - Present",
+    desc: "Developed dynamic and scalable web applications using the MERN stack, handling both frontend and backend development. Collaborated with cross-functional teams to build responsive UI, implement RESTful APIs, and optimize application performance in an agile environment.",
+    skills: [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "React JS",
+      "TypeScript",
+      "Node JS",
+      "Tailwind CSS",
+      "MongoDb",
+        "Redux",
+      "Express JS",	
+      " Next Js",
+    ],
+  },
 ];
 
 export const education = [
