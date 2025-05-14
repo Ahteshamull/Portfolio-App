@@ -42,17 +42,14 @@ import SilverLogo from "./assets/work_logo/work4.png";
 import NextELogo from "./assets/work_logo/work3.png";
 import SocketChatLogo from "./assets/work_logo/work2.png";
 import GithubLogo from "./assets/work_logo/work9.png";
-import FchatLogo from "./assets/work_logo/work8.png";
+import FchatLogo from "./assets/work_logo/work8.jpg";
 import innovativeLogo from "./assets/work_logo/work7.png";
 
 export const SkillsInfo = [
   {
     title: "Frontend",
     skills: [
-      { name: "HTML", logo: htmlLogo },
-      { name: "CSS", logo: cssLogo },
-      { name: "SASS", logo: sassLogo },
-      { name: "JavaScript", logo: javascriptLogo },
+      
       { name: "React JS", logo: reactjsLogo },
       { name: "Android Studio", logo: androidStudioLogo },
       { name: "Redux", logo: reduxLogo },
@@ -75,6 +72,10 @@ export const SkillsInfo = [
   {
     title: "Languages",
     skills: [
+      { name: "HTML", logo: htmlLogo },
+      { name: "CSS", logo: cssLogo },
+      { name: "SASS", logo: sassLogo },
+      { name: "JavaScript", logo: javascriptLogo },
       { name: "JavaScript", logo: javascriptLogo },
       { name: "TypeScript", logo: typescriptLogo },
     ],
