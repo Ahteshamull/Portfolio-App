@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Navbar from './components/Navbar/Navbar'
 import About from './components/About/About'
 import Work from './components/Work/Work'
@@ -8,8 +8,10 @@ import Footer from './components/Footer/Footer'
 import Education from './components/Education/Education'
 import Experience from './components/Experience/Experience'
 import BlurBlob from './components/BlurBlob'
+import ScrollToTop from "react-scroll-to-top";
 
 export default function App() {
+  const [isHovered, setIsHovered] = useState(false);
   return (
     <div className="bg-[#050414]">
       <BlurBlob
@@ -27,6 +29,35 @@ export default function App() {
         <Contact />
         <Footer />
       </div>
+      <ScrollToTop
+        smooth
+        color="#fff"
+        style={{
+          position: "fixed",
+          bottom: "100px",
+          right: "30px",
+          transform: "translateY(50%)",
+          background: isHovered
+            ? "linear-gradient(90deg, #a855f7, #3b9c3c)"
+            : "linear-gradient(90deg, #3b9c3c, #a855f7)",
+          boxShadow: isHovered
+            ? "0 0 10px #fff, 0 0 20px #a855f7"
+            : "0 0 2px #8245ec, 0 0 2px #8245ec, 0 0 40px #8245ec",
+          borderRadius: "50%",
+          width: "50px",
+          height: "50px",
+          textAlign: "center",
+          alignItems: "center",
+          justifyContent: "center",
+          display: "flex",
+          cursor: "pointer",
+          transition: "all 0.3s ease",
+          transformOrigin: "center",
+          scale: isHovered ? "1.1" : "1",
+        }}
+        onMouseEnter={() => setIsHovered(true)}
+        onMouseLeave={() => setIsHovered(false)}
+      />
     </div>
   );
 }

@@ -8,7 +8,7 @@ const About = () => {
   return (
     <section
       id="about"
-      className="py-4 select-none px-[7vw] md:px-[7vw] lg:px-[15vw] font-sans mt-16 md:mt-24 lg:mt-32"
+      className="py-4 select-none px-[7vw] md:px-[7vw] lg:px-[18vw] font-sans mt-16 md:mt-24 lg:mt-32"
     >
       <div className="flex flex-col-reverse md:flex-row justify-between items-center">
         {/* Left Side */}
@@ -19,12 +19,13 @@ const About = () => {
           </h1>
           {/* Name */}
           <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-4 leading-tight">
-            <span className="">A</span>hteshamul Ha<span className="text-shop_light_green">s</span>an
+            <span className="">A</span>hteshamul Ha
+            <span className="text-shop_light_green">s</span>an
           </h2>
           {/* Skills Heading with Typing Effect */}
           <div className="text-xl sm:text-2xl md:text-3xl font-semibold mb-4 text-[#8245ec] leading-tight">
             <h1 className="flex gap-5 items-center">
-            <span className="text-white">A</span>
+              <span className="text-white">A</span>
               <Typewriter
                 options={{
                   strings: [
@@ -49,18 +50,30 @@ const About = () => {
             technologies.
           </p>
           {/* Resume Button */}
-          <a
-            href="https://drive.google.com/file/d/1ewnKK8vmY0N41JBsjLL8_HB748z3nu5c/view?usp=drivesdk"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-block text-white py-3 px-8 rounded-full mt-5 text-lg font-bold transition duration-300 transform hover:scale-105"
-            style={{
-              background: "linear-gradient(90deg, #8245ec, #a855f7)",
-              boxShadow: "0 0 2px #8245ec, 0 0 2px #8245ec, 0 0 40px #8245ec",
-            }}
-          >
-            DOWNLOAD CV
-          </a>
+          <div className="flex gap-5 items-center">
+            <a
+              href="https://drive.google.com/file/d/1ewnKK8vmY0N41JBsjLL8_HB748z3nu5c/view?usp=drivesdk"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block text-white py-3 px-8 rounded-full mt-5 text-lg font-bold transition duration-300 transform hover:scale-105"
+              style={{
+                background: "linear-gradient(90deg, #8245ec, #a855f7)",
+                boxShadow: "0 0 2px #8245ec, 0 0 2px #8245ec, 0 0 40px #8245ec",
+              }}
+            >
+              DOWNLOAD CV
+            </a>
+            <a
+              className="inline-block text-white py-3 px-8 rounded-full mt-5 text-lg font-bold transition duration-300 transform hover:scale-105"
+              style={{
+                background: "linear-gradient(90deg, #8245ec, #a855f7)",
+                boxShadow: "0 0 2px #8245ec, 0 0 2px #8245ec, 0 0 40px #8245ec",
+              }}
+              href="http://api.whatsapp.com/send?phone=+8801924542671"
+            >
+              Hire Me
+            </a>
+          </div>
         </div>
         {/* Right Side */}
         <div className="md:w-1/2 flex justify-center md:justify-end">
