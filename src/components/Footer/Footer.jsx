@@ -78,6 +78,7 @@ const Footer = () => {
             </a>
           ))}
         </div>
+        <p className="text-sm text-gray-400 mt-6">ahteshamulhasan2@gmail.com</p>
 
         {/* Copyright Text */}
         <p className="text-sm text-gray-400 mt-6">

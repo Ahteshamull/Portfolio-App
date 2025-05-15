@@ -29,6 +29,7 @@ const Navbar = () => {
   };
 
   const menuItems = [
+    { id: " ", label: "Home" },
     { id: "about", label: "About" },
     { id: "skill", label: "Skill" },
     { id: "experience", label: "Experience" },
@@ -46,7 +47,10 @@ const Navbar = () => {
     >
       <div className="text-white py-5 flex justify-between items-center">
         {/* Logo */}
-        <div className="cursor-pointer">
+        <div className="cursor-pointer " id="home">
+          <a href=" ">
+
+
           <h2 className="text-2xl text-white font-bold tracking-wider uppercase hover:text-shop_light_green transition-all duration-150  group font-sans">
             A
             <span className="text-shop_light_green group-hover:text-white    ">
@@ -54,6 +58,7 @@ const Navbar = () => {
             </span>
             Hasan
           </h2>
+          </a>
         </div>
 
         {/* Desktop Menu */}
